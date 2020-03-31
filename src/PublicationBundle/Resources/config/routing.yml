@@ -1,0 +1,16 @@
+publication_homepage:
+    path:     /
+    defaults: { _controller: "PublicationBundle:Default:index" }
+publication_index:
+    path:     /index1
+    defaults: { _controller: "PublicationBundle:Publication:home" }
+    methods:  GET
+publication_new:
+    path:     /new
+    defaults: { _controller: "PublicationBundle:Publication:new" }
+    methods:  [GET, POST]
+publication_admin_view:
+    path:     /admin/view_posts
+    defaults: { _controller: "PublicationBundle:Publication:view" }
+    methods:  GET
+
